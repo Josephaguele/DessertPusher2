@@ -48,7 +48,7 @@ class DessertTimer(lifecycle: Lifecycle) : LifecycleObserver {
      */
     private var handler = Handler()
     private lateinit var runnable: Runnable
-
+    private lateinit var dessertTimer: DessertTimer
 
     init {
         // Add this as a lifecycle Observer, which allows for the class to react to changes in this
@@ -81,4 +81,6 @@ class DessertTimer(lifecycle: Lifecycle) : LifecycleObserver {
         // timer
         handler.removeCallbacks(runnable)
     }
+
+
 }
